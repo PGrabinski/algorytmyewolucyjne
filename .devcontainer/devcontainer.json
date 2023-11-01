@@ -1,0 +1,17 @@
+{
+  "image": "poetry-jupyter:0.9",
+
+  "customizations": {
+      "vscode": {
+        "extensions": [
+			"ms-toolsai.jupyter",
+			"ms-python.python",
+			"ms-azuretools.vscode-docker"
+		]
+      }
+    },
+
+    "forwardPorts": [8888], 
+
+    "postCreateCommand": "bash ./.devcontainer/post-install.sh"
+}
