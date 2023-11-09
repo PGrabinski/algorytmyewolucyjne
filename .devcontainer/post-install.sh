@@ -11,6 +11,6 @@ set -ex
 # Now install all dependencies
 poetry install
 
-poetry shell
-
 echo "Done!"
+
+poetry jupyter notebook --allow-root
