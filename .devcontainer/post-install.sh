@@ -9,8 +9,9 @@ set -ex
 # poetry config virtualenvs.in-project true
 
 # Now install all dependencies
-poetry install
+poetry install --no-root
 
-echo "Done!"
+git config --global user.name "Paweł Grabiński"
+git config --global user.email "pawelrgrabinski@gmail.com"
 
-poetry jupyter notebook --allow-root
+poetry run jupyter notebook --allow-root
